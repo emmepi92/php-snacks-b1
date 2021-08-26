@@ -51,15 +51,15 @@ $posts = [
 ];
 
 $keys = array_keys($posts);
-for ($i=0; $i <= count($keys); $i++) {
-    echo $keys[$i] . '<br/>';
+for ($i=0; $i < count($keys); $i++) {
+    echo "<h3>{$keys[$i]}</h3>";
 
-    for($x=0; $x<= count($posts[$keys[$i]]); $x++) {
+    for($x=0; $x< count($posts[$keys[$i]]); $x++) {
 
         echo "
             {$posts[$keys[$i]][$x]['title']} <br/>
             {$posts[$keys[$i]][$x]['author']} <br/>
-            {$posts[$keys[$i]][$x]['text']} <br/> <hr />";
+            {$posts[$keys[$i]][$x]['text']} <br/> <hr/>";
     }
 }
 
