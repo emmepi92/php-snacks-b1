@@ -16,8 +16,8 @@ $testo = 'Quant’è bella giovinezza, che si fugge tuttavia! chi vuol esser lie
 
 $arrayFrasi = explode('.', $testo);
 
-for ($i=0; $i < count($arrayFrasi); $i++) {
-    echo "<p> {$arrayFrasi[$i]} </p>";
+for ($i=0; $i < count($arrayFrasi) - 1; $i++) {
+    echo "<p> {$arrayFrasi[$i]}. </p>";
 }
 
 
