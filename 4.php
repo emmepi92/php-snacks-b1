@@ -38,8 +38,8 @@ $classe = [
 ];
 
 for ($i=0; $i< count($classe); $i++) {
-    echo "{$classe[$i]['nome']} {$classe[$i]['cognome']}, ";
-    echo "media dei voti: " . (array_sum($classe[$i]['voti']) / count($classe[$i]['voti']) ) . "<br />" ;
+    $media = (array_sum($classe[$i]['voti']) / count($classe[$i]['voti']));
+    echo "{$classe[$i]['nome']} {$classe[$i]['cognome']}, media dei voti: {$media} <br />" ;
 }
 
 
